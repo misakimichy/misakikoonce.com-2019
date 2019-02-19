@@ -20,11 +20,11 @@ html {
 
 body {
     margin: 0 auto;
-    padding: 2em;
+    padding: 2em 2em 0 2em;
 }
 
 /* Vertical rhythm */
-.placeholder, h1, p, hr, .journey .event, .values {
+.placeholder, h1, p, hr, .journey .event, .values, .contact {
     margin: 0 0 45px;
 }
 
@@ -117,4 +117,31 @@ hr {
 
 .value-icon3 {
     grid-column: 1 / 2;
+}
+
+.misaki {
+    width: 75px;
+    height: 75px;
+    background: #eee;
+    float: left;
+    margin-right: 20px;
+}
+
+.resume {
+    width: 105px;
+    height: 150px;
+    background: #eee;
+    float: right;
+    margin: 40px 0 0 20px;
+}
+
+footer {
+    background: #eee;
+    margin: 0 -2em 0 -2em;
+    padding: 2em;
+}
+
+footer .copyright {
+    font-size: 18px;
+    margin: 0;
 }
