@@ -6,16 +6,16 @@ html {
     box-sizing: inherit;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
 @font-face {
     font-family: 'Benne Regular';
     font-style: normal;
     font-weight: normal;
     src: local('Benne Regular'), url('Benne-Regular.woff') format('woff');
-}
-
-* {
-    margin: 0;
-    padding: 0;
 }
 
 body {
@@ -32,6 +32,11 @@ h1, p, hr, .journey .event, .values, .contact {
 
 p {
     font-size: 25px;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #dedede; 
 }
 
 .hero {
@@ -52,11 +57,6 @@ p {
     font-weight: normal;
     margin-block-end: 0;
     margin-block-start: 0;
-}
-
-hr {
-    border: 0;
-    border-top: 1px solid #dedede; 
 }
 
 .journey {
@@ -81,10 +81,21 @@ hr {
     padding-left: 20px;
 }
 
+.journey .cert-event .certificate {
+    margin-left: -70px;
+}
+
+.journey .cert-event a {
+    margin-right: 20px;
+}
+
+.journey .cert-event img {
+    margin-bottom: 45px;
+}
+
 .journey .cert-event .nanodegree {
     width: 100px;
     height: 80px;
-    margin-left: -70px;
 }
 
 .journey .cert-event .cert {
@@ -92,14 +103,10 @@ hr {
     height: 100px;
 }
 
-.journey .cert-event .certificate {
-    margin-right: 20px;
-    margin-bottom: 20px;
-}
-
 .journey .cert-event ul {
     list-style: circle;
     padding-left: 30px;
+    margin-bottom: 45px;
 }
 
 .journey .cert-event ul li {
@@ -196,10 +203,13 @@ footer .copyright {
         font-size: 35px;
     }
 
+    .journey .cert-event .certificate {
+        margin-left: -110px;
+    }
+
     .journey .cert-event .nanodegree {
         width: 180px;
         height: 130px;
-        margin-left: -100px;
     }
 
     .journey .cert-event .cert {
@@ -207,9 +217,16 @@ footer .copyright {
         height: 160px;
     }
 
-    .journey .cert-event .certificate {
+    .journey .cert-event a {
         margin-right: 50px;
-        margin-bottom: 20px;
+    }
+
+    .journey .cert-event img {
+        margin-bottom: 60px;
+    }
+
+    .journey .cert-event ul li {
+        font-size: 30px;
     }
 
     .values {
@@ -250,19 +267,18 @@ footer .copyright {
         width: 500px;
     }
 
+    .journey .cert-event .certificate {
+        margin-left: -140px;
+    }
+
     .journey .cert-event .nanodegree {
         width: 250px;
         height: 200px;
-        margin-left: -145px;
     }
     
     .journey .cert-event .cert {
         width: 190px;
-        height: 250px;
-    }
-
-    .journey .cert-event .certificate {
-        margin-bottom: 40px;
+        height: 260px;
     }
     
     .journey .cert-event ul {
@@ -271,11 +287,11 @@ footer .copyright {
     
     .journey .cert-event ul li {
         padding-bottom: 30px;
-        font-size: 25px;
+        font-size: 35px;
     }
 }
 
-/* Responsive design for large screens */ 
+/* Responsive design for large screens - 2 columns */ 
 @media screen and (min-width: 1920px) {
     body {
         padding: 10em 10em 0 10em;
