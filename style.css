@@ -81,29 +81,30 @@ hr {
     padding-left: 20px;
 }
 
-.journey .nanodegree {
+.journey .cert-event .nanodegree {
     width: 100px;
     height: 80px;
     margin-left: -70px;
 }
 
-.journey .cert {
-    width: 80 px;
+.journey .cert-event .cert {
+    width: 80px;
     height: 100px;
 }
 
-.journey .certificate {
+.journey .cert-event .certificate {
     margin-right: 20px;
     margin-bottom: 20px;
 }
 
-.journey ul {
+.journey .cert-event ul {
     list-style: circle;
     padding-left: 30px;
 }
 
-.journey ul li {
+.journey .cert-event ul li {
     padding-bottom: 20px;
+    font-size: 20px;
 }
  
 .values {
@@ -195,6 +196,22 @@ footer .copyright {
         font-size: 35px;
     }
 
+    .journey .cert-event .nanodegree {
+        width: 180px;
+        height: 130px;
+        margin-left: -100px;
+    }
+
+    .journey .cert-event .cert {
+        width: 120px;
+        height: 160px;
+    }
+
+    .journey .cert-event .certificate {
+        margin-right: 50px;
+        margin-bottom: 20px;
+    }
+
     .values {
         grid-row-gap: 20px;
     }
@@ -231,6 +248,30 @@ footer .copyright {
 
     .hero img {
         width: 500px;
+    }
+
+    .journey .cert-event .nanodegree {
+        width: 250px;
+        height: 200px;
+        margin-left: -145px;
+    }
+    
+    .journey .cert-event .cert {
+        width: 190px;
+        height: 250px;
+    }
+
+    .journey .cert-event .certificate {
+        margin-bottom: 40px;
+    }
+    
+    .journey .cert-event ul {
+        padding-left: 50px;
+    }
+    
+    .journey .cert-event ul li {
+        padding-bottom: 30px;
+        font-size: 25px;
     }
 }
 
