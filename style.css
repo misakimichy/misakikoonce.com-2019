@@ -28,11 +28,16 @@ body {
     margin: 0 0 45px;
 }
 
+p {
+    font-size: 25px;
+}
+
 .hero {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .placeholder {
@@ -41,16 +46,12 @@ body {
     height: 300px;
 }
 
-h1 {
+.hero h1 {
     font-family: 'Benne Regular';
     font-weight: normal;
     font-size: 100px;
     margin-block-end: 0;
     margin-block-start: 0;
-}
-
-p {
-    font-size: 25px;
 }
 
 hr {
@@ -137,14 +138,6 @@ hr {
     margin-right: 20px;
 }
 
-.resume {
-    width: 105px;
-    height: 150px;
-    background: #fff;
-    float: right;
-    margin: 40px 0 0 20px;
-}
-
 footer {
     background: #ddd;
 }
@@ -152,4 +145,51 @@ footer {
 footer .copyright {
     font-size: 18px;
     margin: 0;
+}
+
+/* Responsive design */
+@media (min-width: 768px) {
+    body {
+        padding: 4em 4em 0 4em;
+    }
+
+    .placeholder, h1, p, hr, .journey .event, .values, .contact {
+        margin: 0 0 60px;
+    }
+
+    .placeholder {
+        width: 300px;
+        height: 300px;
+    }
+
+    .hero h1 {
+        font-size: 150px;
+    }
+
+    p {
+        font-size: 35px;
+    }
+
+    .values {
+        grid-row-gap: 20px;
+    }
+
+    .values .icon {
+        width: 150px;
+        height: 150px;
+    }
+
+    .contact, footer {
+        margin: 0 -4em 0 -4em;
+        padding: 4em;
+    }
+
+    .misaki {
+        width: 150px;
+        height: 150px;
+    }
+
+    .copyright {
+        font-size: 20px;
+    }
 }
