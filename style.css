@@ -119,10 +119,20 @@ hr {
     grid-column: 1 / 2;
 }
 
+.contact {
+    background: #eee;
+}
+
+/* Make bottom sections flush */
+.contact, footer {
+    margin: 0 -2em 0 -2em;
+    padding: 2em;
+}
+
 .misaki {
     width: 75px;
     height: 75px;
-    background: #eee;
+    background: #fff;
     float: left;
     margin-right: 20px;
 }
@@ -130,15 +140,13 @@ hr {
 .resume {
     width: 105px;
     height: 150px;
-    background: #eee;
+    background: #fff;
     float: right;
     margin: 40px 0 0 20px;
 }
 
 footer {
-    background: #eee;
-    margin: 0 -2em 0 -2em;
-    padding: 2em;
+    background: #ddd;
 }
 
 footer .copyright {
