@@ -19,6 +19,8 @@ html {
 }
 
 body {
+    font-family: 'Benne Regular';
+    font-weight: normal;
     margin: 0 auto;
     padding: 2em 2em 0 2em;
 }
@@ -46,9 +48,8 @@ p {
 }
 
 .hero h1 {
-    font-family: 'Benne Regular';
-    font-weight: normal;
     font-size: 100px;
+    font-weight: normal;
     margin-block-end: 0;
     margin-block-start: 0;
 }
@@ -78,6 +79,31 @@ hr {
 
 .journey .event p {
     padding-left: 20px;
+}
+
+.journey .nanodegree {
+    width: 100px;
+    height: 80px;
+    margin-left: -70px;
+}
+
+.journey .cert {
+    width: 80 px;
+    height: 100px;
+}
+
+.journey .certificate {
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.journey ul {
+    list-style: circle;
+    padding-left: 30px;
+}
+
+.journey ul li {
+    padding-bottom: 20px;
 }
  
 .values {
