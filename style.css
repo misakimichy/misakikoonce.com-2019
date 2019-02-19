@@ -92,6 +92,7 @@ hr {
     height: 75px;
     background: #eee;
     border-radius: 75px;
+    margin: 0 auto;
 }
 
 .value1 {
@@ -147,8 +148,8 @@ footer .copyright {
     margin: 0;
 }
 
-/* Responsive design */
-@media (min-width: 768px) {
+/* Responsive design for iPad and iPad pro */
+@media screen and (min-width: 1024px) {
     body {
         padding: 4em 4em 0 4em;
     }
@@ -193,3 +194,15 @@ footer .copyright {
         font-size: 20px;
     }
 }
+
+@media screen and (min-width: 1025px) {
+    body {
+        padding: 6em 6em 0 6em;
+    }
+
+    p {
+        font-size: 40px;
+    }
+}
+
+@media screen and (min-width: )
