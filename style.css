@@ -26,7 +26,7 @@ body {
 }
 
 /* Vertical rhythm */
-h1, p, hr, .journey .event, .values, .contact {
+p, hr, .journey .event, .values, .contact {
     margin: 0 0 45px;
 }
 
