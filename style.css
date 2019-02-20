@@ -93,14 +93,11 @@ hr {
     margin-bottom: 45px;
 }
 
-.journey .cert-event .nanodegree {
-    width: 100px;
-    height: 80px;
-}
-
 .journey .cert-event .cert {
-    width: 80px;
-    height: 100px;
+    height: 80px;
+    border: 1px solid #ddd;
+    box-shadow: 0px 2px 4px 1px #eee;
+    padding: 6px;
 }
 
 .journey .cert-event ul {
@@ -207,13 +204,7 @@ footer .copyright {
         margin-left: -110px;
     }
 
-    .journey .cert-event .nanodegree {
-        width: 180px;
-        height: 130px;
-    }
-
     .journey .cert-event .cert {
-        width: 120px;
         height: 160px;
     }
 
@@ -270,14 +261,8 @@ footer .copyright {
     .journey .cert-event .certificate {
         margin-left: -140px;
     }
-
-    .journey .cert-event .nanodegree {
-        width: 250px;
-        height: 200px;
-    }
     
     .journey .cert-event .cert {
-        width: 190px;
         height: 260px;
     }
     
