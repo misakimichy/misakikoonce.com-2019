@@ -111,7 +111,7 @@ hr {
  
 .values {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
 }
 
@@ -119,34 +119,40 @@ hr {
     width: 75px;
     height: 75px;
     background: #eee;
-    border-radius: 75px;
+    border-radius: 100%;
     margin: 0 auto;
 }
 
-.value1 {
-    grid-column: 2 / 4;
-    grid-row: 1 / 2;
+.values p {
+    align-self: center;
 }
 
-.value2 {
-    grid-column: 1 / 3;
-    grid-row: 2 / 3;
-}
-.value3 {
+.values .value1, .value3 {
     grid-column: 2 / 4;
-    grid-row: 3 / 4;
 }
 
-.value-icon1 {
+.values .value2 {
+    grid-column: 1/ 3;
+}
+
+.values .value-icon1, .value-icon3 {
     grid-column: 1 / 2;
 }
 
-.value-icon2 {
+.values .value-icon2 {
     grid-column: 3 / 4;
 }
 
-.value-icon3 {
-    grid-column: 1 / 2;
+.values .value1, .value-icon1 {
+    grid-row: 1 / 2;
+}
+
+.values .value2, .value-icon2 {
+    grid-row: 2 / 3;
+}
+
+.values .value3, .value-icon3 {
+    grid-row: 3 / 4;
 }
 
 .contact {
@@ -222,11 +228,37 @@ footer .copyright {
     }
 
     .values {
-        grid-row-gap: 20px;
+        grid-template-columns: 150px 30px repeat(3, 1fr) 25px 150px;
+        grid-row-gap: 50px;
+    }
+
+    .values p {
+        all: unset;
+        font-size: 35px;
+    }
+
+    .values .value1 {
+        grid-column: 3 / 8;
+    }
+    
+    .values .value2 {
+        grid-column: 2/ 6;
+    }
+
+    .values .value3 {
+        grid-column: 3 / 8;
+    }
+    
+    .values .value-icon1, .value-icon3 {
+        grid-column: 1 / 2;
+    }
+    
+    .values .value-icon2 {
+        grid-column: 7 / 8;
     }
 
     .values .icon {
-        width: 150px;
+        min-width: 150px;
         height: 150px;
     }
 
