@@ -151,6 +151,7 @@ hr {
 
 .contact {
     background: #eee;
+    display: flex;
 }
 
 /* Make bottom sections flush */
@@ -159,12 +160,15 @@ hr {
     padding: 2em;
 }
 
-.misaki {
-    width: 75px;
-    height: 75px;
-    background: #fff;
-    float: left;
+.contact img {
+    width: 120px;
     margin-right: 20px;
+}
+
+.contact ul {
+    list-style: circle;
+    font-size: 20px;
+    margin-left: 20px;
 }
 
 footer {
