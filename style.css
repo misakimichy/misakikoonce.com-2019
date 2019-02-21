@@ -74,38 +74,41 @@ hr {
 
 .journey .event {
     display: flex;
-    flex-direction: row;
 }
 
 .journey .event p {
     padding-left: 20px;
 }
 
-.journey .cert-event .certificate {
+.journey .event .event-certificate {
+    margin-bottom: -15px;
+}
+
+.journey .certificate {
     margin-left: -35px;
 }
 
-.journey .cert-event a {
+.journey .certificate a {
     margin-right: 10px;
     margin-bottom: 30px;
     display: inline-block;
 }
 
-.journey .cert-event .cert {
+.journey .certificate .cert {
     height: 80px;
     border: 6px solid #fff;
     outline: 1px solid #ddd;
     box-shadow: 0px 2px 4px 1px #eee;
 }
 
-.journey .cert-event ul {
+.journey .certificate ul {
     list-style: circle;
     margin-left: 55px;
     margin-bottom: 70px;
     font-size: 20px;
 }
 
-.journey .cert-event ul li {
+.journey .certificate ul li {
     margin-bottom: 15px;
 }
  
@@ -220,20 +223,20 @@ footer .copyright {
         font-size: 35px;
     }
 
-    .journey .cert-event .certificate {
+    .journey .certificate  .certificate {
         margin-left: -35px;
     }
 
-    .journey .cert-event .cert {
+    .journey .certificate  .cert {
         height: 160px;
     }
 
-    .journey .cert-event a {
+    .journey .certificate  a {
         margin-right: 50px;
         margin-bottom: 40px;
     }
 
-    .journey .cert-event ul {
+    .journey .certificate  ul {
         margin-bottom: 85px;
         margin-left: 70px;
         font-size: 25px;
@@ -311,15 +314,15 @@ footer .copyright {
         width: 500px;
     }
 
-    .journey .cert-event .certificate {
+    .journey .certificate  .certificate {
         margin-left: -40px;
     }
     
-    .journey .cert-event .cert {
+    .journey .certificate  .cert {
         height: 260px;
     }
     
-    .journey .cert-event ul {
+    .journey .certificate  ul {
         padding-left: 50px;
     }
 
