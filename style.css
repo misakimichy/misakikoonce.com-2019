@@ -192,6 +192,10 @@ footer {
     background: #ddd;
 }
 
+footer a {
+    text-decoration: none;
+}
+
 footer .copyright {
     font-size: 18px;
     margin: 0;
