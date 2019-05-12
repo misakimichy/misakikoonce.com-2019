@@ -223,16 +223,19 @@ footer .copyright {
         font-size: 35px;
     }
 
-    .journey .certificate  .certificate {
+    .journey .certificate .certificate {
         margin-left: -35px;
     }
 
-    .journey .certificate  .cert {
+    .journey .certificate .cert {
         height: 160px;
     }
 
+    .journey .certificate {
+    }
+
     .journey .certificate  a {
-        margin-right: 50px;
+        margin-right: 40px;
         margin-bottom: 40px;
     }
 
