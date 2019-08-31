@@ -228,10 +228,7 @@ footer .copyright {
     }
 
     .journey .certificate .cert {
-        height: 160px;
-    }
-
-    .journey .certificate {
+        height: 150px;
     }
 
     .journey .certificate  a {
@@ -241,7 +238,6 @@ footer .copyright {
 
     .journey .certificate  ul {
         margin-bottom: 85px;
-        margin-left: 70px;
         font-size: 25px;
     }
 
@@ -322,11 +318,11 @@ footer .copyright {
     }
     
     .journey .certificate  .cert {
-        height: 260px;
+        height: 150px;
     }
     
     .journey .certificate  ul {
-        padding-left: 50px;
+        margin-left: 40px;
     }
 
     .values p {
