@@ -1,0 +1,27 @@
+{
+  "name": "y",
+  "version": "1.0.0",
+  "description": "My personal site.",
+  "main": "index.js",
+  "dependencies": {
+    "gatsby": "^2.15.28",
+    "gatsby-cli": "^2.8.8",
+    "gatsby-starter-default": "file:gatsby",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/misakimichy/misakikoonce.com.git"
+  },
+  "author": "misaki koonce",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/misakimichy/misakikoonce.com/issues"
+  },
+  "homepage": "https://github.com/misakimichy/misakikoonce.com#readme"
+}
