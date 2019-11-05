@@ -3,9 +3,14 @@ import { Link } from 'gatsby'
 
 const Works = () => (
     <div>
-        <Link to='/'>
-            <a>Go back</a>
-        </Link>
+        <div>
+            <Link to='/'>
+                <a>Go back</a>
+            </Link>
+            <div>
+                <span>avator</span><span>author</span>
+            </div>
+        </div>
         <div>
             <div>
                 <h1>Project Name</h1>
