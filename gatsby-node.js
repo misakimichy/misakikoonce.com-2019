@@ -1,16 +1,33 @@
-exports.createPages = async ({ actions: { createPage} }) => {
-    // Fetch data using `getWorkData` function
-    const allData = await getWorkData(['work1','work2', 'work3']);
-    // Create a page that lists all work.
-    createPage({
-        path: `/`,
-        component: require.resolve("./src/templates/all-work.js"),
-        context: { allWork },
-    })
-    // Create a page for each work
-    createPage({
-        path:`/work/${work.name}/`.anchor,
-        component: require.resolve("./src/templates/work.js"),
-        context: { work },
+const path = require(`path`)
+exports.createPages = async ({ actions, graphql, reporter }) => {
+    const { createPages } = actions
+    const blogPostTemplate = path.resolve(`src/templates/blogTemplate.js`)
+    const result = await graphql(`
+    {
+        allMarkdownRemark(
+            sort: { order: DESC, fields: [frontmatter__date] }
+            limit: 1000
+        ) {
+            edges {
+                node {
+                    frontmatter {
+                        path
+                    }
+                }
+            }
+        }
+    }
+    `)
+    // Handle errors
+    if (result.errors) {
+        reporter.panicOnBuild(`Error while running GraphQL query.`)
+        return
+    }
+    result.data.allMakrdownRemark.dedges.forEach({ node } => {
+        createPages({
+            path: node.frontmatter.path,
+            component: blogPostTemplate,
+            context: {}, // additional data can be passed via context
+        })
     })
 }
