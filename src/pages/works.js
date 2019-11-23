@@ -8,7 +8,7 @@ const Works = () => (
                 <a>Go back</a>
             </Link>
             <div>
-                <span>avator</span><span>author</span>
+                <span>avator.img</span><span>author</span>
             </div>
         </div>
         <div>
