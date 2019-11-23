@@ -7,8 +7,8 @@ export default () => (
         <main>
             <h1> Work</h1>
             <ul>
-                <li><Link to="/works/work-a">Work A</Link></li>
-                <li><Link to="/works/work-b">Work B</Link></li>
+                <li><Link to="/works/brown-and-cony">Brown and Cony</Link></li>
+                <li><Link to="/works/project-miguel">Project Miguel</Link></li>
             </ul>
         </main>
     </Layout>
